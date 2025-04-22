@@ -60,7 +60,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # ۲. جلوگیری از ارسال بیش از ۲ پیام در ۲۴ ساعت
     user_messages.setdefault(user_id, []).append(datetime.datetime.now())
-    if count_user_messages(user_id) > 2:
+    if count_user_messages(user_id) > 3:
         try:
             await context.bot.delete_message(chat_id, update.message.message_id)
             await context.bot.send_message(chat_id, f"{user.first_name}، شما فقط می‌توانید ۲ پیام در ۲۴ ساعت ارسال کنید.")
