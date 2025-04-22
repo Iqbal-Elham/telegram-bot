@@ -71,7 +71,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # ۳. بررسی تعداد دعوت‌ها
     # فقط برای نمونه: اگر کاربر هنوز ۵ نفر دعوت نکرده باشد، نمی‌تواند پیام بفرستد
     invited = user_invites.get(user_id, 0)
-    if invited < 5:
+    if invited < 0:
         try:
             await context.bot.delete_message(chat_id, update.message.message_id)
             await context.bot.send_message(chat_id, f"{user.first_name}، لطفاً قبل از ارسال پیام ۵ نفر را به گروه دعوت کن.")
