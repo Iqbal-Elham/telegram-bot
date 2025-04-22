@@ -7,7 +7,7 @@ import datetime
 TOKEN = "7960035272:AAFGw7sH89KAw0NCDmOaUK7QqvCsllVSXiQ"
 
 # آیدی عددی خودت را اینجا بگذار
-ADMIN_ID = "7859723808"
+ADMIN_ID = 7859723808
 
 # فهرست کلمات فحش
 BAD_WORDS = ["فحش۱", "فحش۲", "بد", "بی‌ادب", "خر", "احمق", "چیتری"] 
