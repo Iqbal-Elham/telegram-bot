@@ -2,13 +2,12 @@ import logging
 from telegram import Update, ChatMember
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 import datetime
-import os
 
 # توکن ربات خودت را اینجا بگذار
-TOKEN = os.getenv("TOKEN")
+TOKEN = "7960035272:AAFGw7sH89KAw0NCDmOaUK7QqvCsllVSXiQ"
 
 # آیدی عددی خودت را اینجا بگذار
-ADMIN_ID = os.getenv("ADMIN_ID")
+ADMIN_ID = "7859723808"
 
 # فهرست کلمات فحش
 BAD_WORDS = ["فحش۱", "فحش۲", "بد", "بی‌ادب", "خر", "احمق", "چیتری"] 
