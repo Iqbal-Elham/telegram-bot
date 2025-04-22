@@ -63,7 +63,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if count_user_messages(user_id) > 3:
         try:
             await context.bot.delete_message(chat_id, update.message.message_id)
-            await context.bot.send_message(chat_id, f"{user.first_name}، شما فقط می‌توانید ۲ پیام در ۲۴ ساعت ارسال کنید.")
+            await context.bot.send_message(chat_id, f"{user.first_name}، شما فقط می‌توانید ۳ پیام در ۲۴ ساعت ارسال کنید.")
         except Exception as e:
             logging.error(f"Delete failed: {e}")
         return
